@@ -1,4 +1,5 @@
 /* @flow */
+
 import fs from 'fs';
 
 export type UserID = string;
@@ -287,4 +288,9 @@ export type BatchItem = {
   relative_url: string,
   name?: string,
   body?: string,
+};
+
+export type NLPConfig = {
+  nlp_enabled?: boolean,
+  custom_token?: string,
 };
